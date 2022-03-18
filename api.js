@@ -14,6 +14,10 @@ const s3 = new S3Client({ region: REGION });
 const S3_BUCKET_NAME = process.env.BUCKET_NAME;
 
 class imageFileHandler {
+
+
+
+  //saves images to aws bucket
   static async saveToStorage(fileUpload) {
     const file = fs.createReadStream(fileUpload.path);
     const key = uuid() + ".jpg";
