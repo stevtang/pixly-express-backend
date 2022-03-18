@@ -6,7 +6,7 @@ const cors = require("cors");
 const multer = require("multer");
 const { getImagesFromDb } = require("./api.js");
 const app = express();
-const port = 3001;
+const port = 3000;
 
 app.use(cors());
 
